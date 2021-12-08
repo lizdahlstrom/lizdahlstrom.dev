@@ -19,7 +19,7 @@ const Technologies = () => (
     <SectionDivider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I have used a range of web development and operations technologies.
+      A selection of web/software development and operations technologies I have used and feel comfortable with.
     </SectionText>
     <List>
       <ListItem>
@@ -34,7 +34,7 @@ const Technologies = () => (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Node.js, Spring MVC, SQL, Postgres, MongoDB
+            Node.js, Spring, SQL, PostgreSQL, MongoDB
           </ListParagraph>
         </ListContainer>
       </ListItem>

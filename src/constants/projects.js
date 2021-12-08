@@ -1,3 +1,5 @@
+import { tags } from './tags';
+
 export const projects = [
   {
     title: 'VibeDuck',
@@ -7,14 +9,11 @@ export const projects = [
     ],
     image: '/images/vibeduck.png',
     tags: [
-      'React',
-      'MUI',
-      'Express',
-      'Node',
-      'Firebase',
-      'Spotify API',
-      'Auth',
-      'Scrum',
+      tags.ReactJs,
+      tags.MaterialUI,
+      tags.Express,
+      tags.NodeJs,
+      tags.Firebase,
     ],
     source: 'https://github.com/lizdahlstrom/VibeDuck',
     visit: 'https://vibeduck.lizdahlstrom.dev',
@@ -26,29 +25,27 @@ export const projects = [
       'A Discord bot built with the help of DiscordJS API and NodeJS. Ziggato can do the following:\n - Get gifs from Giphy\n - Convert currencies\n- Get a variety of jokes\n - Fetch lyrics\n- Display games that are in common between steam users\n - Translate text using Google translate\n- Unit conversion\n- Create Watch2Gether rooms\n - Search and display Wikipedia entries\n- Show synonyms or rhymes of words',
     ],
     image: '/images/ziggato.png',
-    tags: ['JavaScript', 'Node', 'Express'],
+    tags: [tags.JavaScript, tags.NodeJs, tags.Express],
     source: 'https://github.com/lizdahlstrom/ziggato',
-    visit: 'https://google.com',
     id: 1,
   },
   {
-    title: 'Issue tracker',
-    description: ['Application which tracks issues.'],
+    title: 'Portfolio',
+    description: ['This website.'],
     image: '/images/pwd.png',
-    tags: ['React', 'MaterialUI', 'Node', 'Express', 'SQL'],
-    source: 'https://google.com',
-    visit: 'https://google.com',
+    tags: [tags.ReactJs, tags.MaterialUI, tags.NodeJs, tags.Express, tags.SQL],
+    source: 'https://github.com/lizdahlstrom/lizdahlstrom',
+    visit: '#',
     id: 2,
   },
   {
     title: 'Personal Web Desktop',
     description: [
-      'This project is a single page application built in React. It simulates a desktop that the user can open different windows and applications on. The following three applications are included in the desktop application: A memory game. A chat connected to a central chat channel using web sockets. A Wikipedia search app.',
+      'This project is a single page application built in React. It simulates a desktop that the user can open different windows and applications on. The following three applications are included in the desktop application: A memory game, a chat connected to a central chat channel using web sockets, and a Wikipedia search app.',
     ],
     image: '/images/pwd.png',
-    tags: ['React', 'Chat', 'WebSockets', 'Wikipedia API'],
+    tags: [tags.JavaScript, tags.ReactJs],
     source: 'https://github.com/lizdahlstrom/Personal-Web-Desktop',
-    visit: 'https://google.com',
     id: 3,
   },
 ];
