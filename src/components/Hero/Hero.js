@@ -14,7 +14,8 @@ const Hero = (props) => (
       <SectionTitle main center>
         Hi, I'm Liz Dahlström <br />
       </SectionTitle>
-      <SectionText>I'm a Computer Science student focused on web development based in Gothenburg.</SectionText>
+      <SectionText>I'm a Computer Science student focused on web development based in Gothenburg.
+      </SectionText>
       <Button
         onClick={() => {
           window.location = '#about';
