@@ -1,5 +1,6 @@
 import React from 'react';
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { ContactData } from '../../constants/contact';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 import {
@@ -20,17 +21,17 @@ const Footer = () => {
       <LinkList>
         <LinkColumn>
           <LinkTitle>Contact me</LinkTitle>
-          <LinkItem href='mailto:lizdahlstrom@gmail.com'>
-            lizdahlstrom@gmail.com
+          <LinkItem href={`mailto:${ContactData.email}`}>
+            {ContactData.email}
           </LinkItem>
         </LinkColumn>
       </LinkList>
       <SocialIconsContainer>
         <SocialContainer>
-          <SocialIcons href='https://github.com/lizdahlstrom'>
+          <SocialIcons href={ContactData.github}>
             <AiFillGithub size='3rem' />
           </SocialIcons>
-          <SocialIcons href='https://linkedin.com'>
+          <SocialIcons href={ContactData.linkedin}>
             <AiFillLinkedin size='3rem' />
           </SocialIcons>
         </SocialContainer>

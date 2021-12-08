@@ -8,7 +8,7 @@ import {
 } from '../../styles/GlobalComponents';
 import { Box, Boxes, BoxNum, BoxText } from './AcomplishmentsStyles';
 
-import { CourseWorkData } from '../../constants/constants';
+import { CourseWorkData } from '../../constants/coursework';
 import { ListTitle } from '../Technologies/TechnologiesStyles';
 
 const Acomplishments = () => (

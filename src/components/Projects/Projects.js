@@ -18,7 +18,7 @@ import {
   SectionDivider,
   SectionTitle,
 } from '../../styles/GlobalComponents';
-import { projects } from '../../constants/constants';
+import { projects } from '../../constants/projects';
 
 const Projects = () => (
   <Section id='projects'>
