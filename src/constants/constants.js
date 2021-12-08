@@ -53,19 +53,6 @@ export const projects = [
   },
 ];
 
-export const TimeLineData = [
-  {
-    year: 2019,
-    text: 'LNU Computer Science Programme Enrollment',
-  },
-  { year: 2020, text: 'Courses in datastructures and development' },
-  {
-    year: 2021,
-    text: 'Courses in testing, systems design and server administration',
-  },
-  { year: 2022, text: '???' },
-];
-
 export const CourseWorkData = [
   {
     title: 'Computer Science',

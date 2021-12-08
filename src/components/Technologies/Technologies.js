@@ -19,14 +19,14 @@ const Technologies = () => (
     <SectionDivider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I have worked with a range of web development and operations technologies.
+      I have used a range of web development and operations technologies.
     </SectionText>
     <List>
       <ListItem>
         <DiReact size='3rem' />
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
-          <ListParagraph>HTML5, CSS3, React.js, TypeScript</ListParagraph>
+          <ListParagraph>React.js, HTML5, CSS3</ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
@@ -41,8 +41,8 @@ const Technologies = () => (
       <ListItem>
         <DiUbuntu size='3rem' />
         <ListContainer>
-          <ListTitle>Sysadmin</ListTitle>
-          <ListParagraph>Linux, Bash, Powershell, Kubernetes</ListParagraph>
+          <ListTitle>Languages</ListTitle>
+          <ListParagraph>JavaScript, TypeScript, Java, C#</ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
