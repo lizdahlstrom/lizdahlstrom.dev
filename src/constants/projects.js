@@ -34,7 +34,7 @@ export const projects = [
     description: ['This website.'],
     image: '/images/pwd.png',
     tags: [tags.ReactJs, tags.NextJS, tags['styled-components']],
-    source: 'https://github.com/lizdahlstrom/lizdahlstrom',
+    source: 'https://github.com/lizdahlstrom/lizdahlstrom.dev',
     visit: '#',
     id: 2,
   },
