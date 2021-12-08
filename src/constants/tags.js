@@ -1,3 +1,4 @@
+import { SiGooglesearchconsole } from 'react-icons/si';
 
 export const tags = {
   NodeJs: 'SiNodeDotJs',
@@ -10,7 +11,9 @@ export const tags = {
   // WebScraping: 'IoMdSearch',
   MongoDB: 'SiMongodb',
   ['styled-components']: 'SiCss3',
-  ['Web sockets']: 'SiSocketDotIo',
+  ['Web Sockets']: 'SiSocketDotIo',
+  PM2: 'SiUbuntu',
+  ['Web Scraping']: 'SiGooglesearchconsole',
 };
 
 Object.freeze(tags);

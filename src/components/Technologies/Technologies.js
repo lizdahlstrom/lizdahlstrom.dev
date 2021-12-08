@@ -17,9 +17,11 @@ import {
 const Technologies = () => (
   <Section id='tech'>
     <SectionDivider />
+    <br />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      A selection of web/software development and operations technologies I have used and feel comfortable with.
+      A selection of web/software development and operations technologies I have
+      used and feel comfortable with.
     </SectionText>
     <List>
       <ListItem>

@@ -10,10 +10,12 @@ import {
 const About = () => {
   return (
     <Section id='about'>
+      <SectionDivider />
       <SectionTitle>About me</SectionTitle>
       <SectionText>
         <p>
-          My name is Liz. I code stuff, mostly in <strong>Java</strong> or <strong>JavaScript</strong>. 
+          My name is Liz. I code stuff, mostly in <strong>Java</strong> or{' '}
+          <strong>JavaScript</strong>.
         </p>
         <br />
         <p>
