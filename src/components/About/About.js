@@ -13,9 +13,7 @@ const About = () => {
       <SectionTitle>About me</SectionTitle>
       <SectionText>
         <p>
-          My name is Liz. I code stuff, mostly in C#, Java or Javascript. I am
-          currently studying a computer science, with a focus on development and
-          operations.
+          My name is Liz. I code stuff, mostly in <strong>Java</strong> or <strong>JavaScript</strong>. 
         </p>
         <br />
         <p>
