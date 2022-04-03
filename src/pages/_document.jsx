@@ -1,5 +1,9 @@
-import Document, { Head, Html, Main, NextScript } from 'next/document';
+import Document, {
+  Head, Html, Main, NextScript,
+} from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+
+import React from 'react';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -7,11 +11,9 @@ export default class MyDocument extends Document {
     const originalRenderPage = ctx.renderPage;
 
     try {
-      ctx.renderPage = () =>
-        originalRenderPage({
-          enhanceApp: (App) => (props) =>
-            sheet.collectStyles(<App {...props} />),
-        });
+      ctx.renderPage = () => originalRenderPage({
+        enhanceApp: (App) => (props) => sheet.collectStyles(<App {...props} />),
+      });
 
       const initialProps = await Document.getInitialProps(ctx);
       return {
@@ -27,19 +29,20 @@ export default class MyDocument extends Document {
       sheet.seal();
     }
   }
+
   render() {
     return (
-      <Html lang='en-GB'>
+      <Html lang="en-GB">
         <Head>
           <link
-            href='https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap'
-            rel='stylesheet'
+            href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
           />
           <link
-            href='https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap'
-            rel='stylesheet'
+            href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+            rel="stylesheet"
           />
-          <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet"/ > 
+          <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />

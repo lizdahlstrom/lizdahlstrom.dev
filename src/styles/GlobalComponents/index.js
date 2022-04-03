@@ -86,10 +86,9 @@ export const SectionDivider = styled.div`
   height: 6px;
   border-radius: 10px;
   background-color: #fff;
-  background: ${(props) =>
-    props.colorAlt
-      ? 'linear-gradient(90deg, rgba(32,46,64,1) 0%, rgba(53,80,112,1) 13%, rgba(109,89,122,1) 52%, rgba(227,131,131,1) 94%, rgba(234,172,139,1) 100%)'
-      : 'linear-gradient(90deg, rgba(32,46,64,1) 0%, rgba(53,80,112,1) 13%, rgba(109,89,122,1) 52%, rgba(227,131,131,1) 94%, rgba(234,172,139,1) 100%)'};
+  background: ${(props) => (props.colorAlt
+    ? 'linear-gradient(90deg, rgba(32,46,64,1) 0%, rgba(53,80,112,1) 13%, rgba(109,89,122,1) 52%, rgba(227,131,131,1) 94%, rgba(234,172,139,1) 100%)'
+    : 'linear-gradient(90deg, rgba(32,46,64,1) 0%, rgba(53,80,112,1) 13%, rgba(109,89,122,1) 52%, rgba(227,131,131,1) 94%, rgba(234,172,139,1) 100%)')};
 
   margin: ${(props) => (props.divider ? '4rem 0' : '')};
 
@@ -183,10 +182,9 @@ export const ButtonBack = styled.div`
   justify-content: center;
   margin: ${({ alt, form }) => (alt || form ? '0' : '0 0 80px')};
   color: #fff;
-  background: ${({ alt }) =>
-    alt
-      ? 'linear-gradient(90deg, rgba(53,80,112,1) 9%, rgba(109,89,122,1) 44%, rgba(229,107,111,1) 79%, rgba(234,172,139,1) 100%)'
-      : 'linear-gradient(90deg, rgba(53,80,112,1) 9%, rgba(109,89,122,1) 44%, rgba(229,107,111,1) 79%, rgba(234,172,139,1) 100%)'};
+  background: ${({ alt }) => (alt
+    ? 'linear-gradient(90deg, rgba(53,80,112,1) 9%, rgba(109,89,122,1) 44%, rgba(229,107,111,1) 79%, rgba(234,172,139,1) 100%)'
+    : 'linear-gradient(90deg, rgba(53,80,112,1) 9%, rgba(109,89,122,1) 44%, rgba(229,107,111,1) 79%, rgba(234,172,139,1) 100%)')};
   cursor: pointer;
   transition: 0.5s ease;
   position: relative;
@@ -218,10 +216,9 @@ export const ButtonFront = styled.button`
   left: 0;
   width: 100%;
   height: 100%;
-  background: ${({ alt }) =>
-    alt
-      ? 'linear-gradient(90deg, rgba(32,46,64,1) 0%, rgba(53,80,112,1) 13%, rgba(109,89,122,1) 42%, rgba(227,131,131,1) 65%, rgba(234,172,139,1) 100%)'
-      : 'linear-gradient(90deg, rgba(32,46,64,1) 0%, rgba(53,80,112,1) 13%, rgba(109,89,122,1) 42%, rgba(227,131,131,1) 65%, rgba(234,172,139,1) 100%)'};
+  background: ${({ alt }) => (alt
+    ? 'linear-gradient(90deg, rgba(32,46,64,1) 0%, rgba(53,80,112,1) 13%, rgba(109,89,122,1) 42%, rgba(227,131,131,1) 65%, rgba(234,172,139,1) 100%)'
+    : 'linear-gradient(90deg, rgba(32,46,64,1) 0%, rgba(53,80,112,1) 13%, rgba(109,89,122,1) 42%, rgba(227,131,131,1) 65%, rgba(234,172,139,1) 100%)')};
   opacity: ${({ disabled }) => (disabled ? '.5' : '1')};
   transition: 0.4s ease;
   font-size: ${({ alt }) => (alt ? '20px' : '24px')};
@@ -229,10 +226,9 @@ export const ButtonFront = styled.button`
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: ${({ disabled }) =>
-    disabled
-      ? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)'
-      : 'none'};
+  box-shadow: ${({ disabled }) => (disabled
+    ? 'inset 0px 2px 1px rgba(46, 49, 55, 0.15), inset 0px 0px 4px rgba(20, 20, 55, 0.3)'
+    : 'none')};
 
   &:hover {
     opacity: 0;

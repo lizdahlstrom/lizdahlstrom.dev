@@ -1,6 +1,6 @@
-import { tags } from './tags';
+import tags from './tags';
 
-export const projects = [
+const projects = [
   {
     title: 'VibeDuck',
     description: [
@@ -49,3 +49,5 @@ export const projects = [
     id: 3,
   },
 ];
+
+export default projects;

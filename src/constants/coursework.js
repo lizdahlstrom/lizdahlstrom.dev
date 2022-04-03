@@ -1,4 +1,4 @@
-export const CourseWorkData = [
+const CourseWorkData = [
   {
     title: 'Computer Science',
     courses: [
@@ -61,3 +61,5 @@ export const CourseWorkData = [
     ],
   },
 ];
+
+export default CourseWorkData;

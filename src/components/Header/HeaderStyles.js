@@ -112,8 +112,7 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   }
 `;
 
-
-// Social Icons 
+// Social Icons
 
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
@@ -126,4 +125,4 @@ border-radius: 50px;
     cursor: pointer;
     
   }
-`
+`;
