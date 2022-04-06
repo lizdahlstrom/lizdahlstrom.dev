@@ -2,7 +2,7 @@ import React from 'react';
 import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
-import Acomplishments from '../components/Acomplishments/Acomplishments';
+import Coursework from '../components/Coursework/Coursework';
 import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
 import Hero from '../components/Hero/Hero';
 import ProjectsList from '../components/ProjectsList/ProjectsList';
@@ -21,7 +21,7 @@ function Home({ projects }) {
       <ProjectsList projects={projects} />
       <Technologies />
       <About />
-      <Acomplishments />
+      <Coursework />
     </Layout>
   );
 }

@@ -9,7 +9,7 @@ import {
 
 import CourseWorkData from '../../constants/coursework';
 
-function Acomplishments() {
+function Coursework() {
   return (
     <Section id="coursework">
       <SectionDivider />
@@ -33,4 +33,4 @@ function Acomplishments() {
   );
 }
 
-export default Acomplishments;
+export default Coursework;

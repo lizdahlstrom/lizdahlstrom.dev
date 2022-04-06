@@ -1,6 +1,4 @@
-import React, { useEffect } from 'react';
-
-import matter from 'gray-matter';
+import React from 'react';
 
 import { DiGithubBadge } from 'react-icons/di';
 import {

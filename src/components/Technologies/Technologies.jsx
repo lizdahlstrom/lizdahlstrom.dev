@@ -31,7 +31,7 @@ function Technologies() {
           <DiReact size="3rem" />
           <ListContainer>
             <ListTitle>Front-End</ListTitle>
-            <ListParagraph>React.js, HTML5, CSS3</ListParagraph>
+            <ListParagraph>React, HTML5, CSS3, SASS, MaterialUI</ListParagraph>
           </ListContainer>
         </ListItem>
         <ListItem>
@@ -39,7 +39,7 @@ function Technologies() {
           <ListContainer>
             <ListTitle>Back-End</ListTitle>
             <ListParagraph>
-              Node.js, Spring, SQL, PostgreSQL, MongoDB
+              Node.js, Express, SQL, MongoDB
             </ListParagraph>
           </ListContainer>
         </ListItem>
@@ -47,7 +47,7 @@ function Technologies() {
           <DiUbuntu size="3rem" />
           <ListContainer>
             <ListTitle>Languages</ListTitle>
-            <ListParagraph>JavaScript, TypeScript, Java, C#</ListParagraph>
+            <ListParagraph>JavaScript, Java, C#</ListParagraph>
           </ListContainer>
         </ListItem>
       </List>
