@@ -16,10 +16,6 @@ function About() {
         <p>
           My name is Liz. I code stuff, mostly in
           {' '}
-          <strong>Java</strong>
-          {' '}
-          or
-          {' '}
           <strong>JavaScript</strong>
           .
         </p>
