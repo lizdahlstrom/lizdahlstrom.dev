@@ -28,7 +28,7 @@ function ProjectCard({
     <BlogCard key={title}>
       <Img src={`./images/projects/${image}`} />
       <TitleContent>
-        <HeaderThree title>{title}</HeaderThree>
+        <HeaderThree title="true">{title}</HeaderThree>
         <Hr />
       </TitleContent>
       <CardInfo>{_truncate(excerpt, 210)}</CardInfo>
@@ -36,7 +36,7 @@ function ProjectCard({
         <a href="/">Read more</a>
       </Link>
       <div>
-        {tags
+        {tags.length > 0
           ? (
             <TagList>
               {tags.map((tag) => (

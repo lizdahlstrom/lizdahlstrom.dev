@@ -19,9 +19,10 @@ export default function ProjectsList({ projects }) {
         {projects.map(({
           frontmatter: {
             title, date, excerpt, image, tags, source, visit,
-          },
-        }, slug) => (
+          }, slug,
+        }) => (
           <ProjectCard
+            key={slug}
             title={title}
             date={date}
             excerpt={excerpt}

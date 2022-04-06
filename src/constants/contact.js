@@ -4,4 +4,6 @@ const ContactData = {
   linkedin: 'https://www.linkedin.com/in/lizdahlstrom/',
 };
 
+Object.freeze(ContactData);
+
 export default ContactData;
