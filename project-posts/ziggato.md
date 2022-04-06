@@ -7,8 +7,6 @@ tags: [ 'JavaScript', 'NodeJs', 'PM2' ]
 source: 'https://github.com/lizdahlstrom/VibeDuck'
 ---
 
-I created Ziggato as a side project along with my studies. I had used Wikipedia API for a uni project and wanted create a utility for a small Discord server used by myself and some friends. As time went on I added more and more features.
-
 ## What can Ziggato do?
 
 A Discord bot built with the help of DiscordJS API and NodeJS. Ziggato can do the following:

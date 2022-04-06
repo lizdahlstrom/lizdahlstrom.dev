@@ -7,6 +7,7 @@ tags: [ 'ReactJs', 'JavaScript', 'MaterialUI', 'NodeJs', 'Firebase' ]
 source: 'https://github.com/lizdahlstrom/VibeDuck'
 visit: 'https://vibeduck.lizdahlstrom.dev'
 ---
+## Background
 
 The purpose of the project was to develop a web application that generates customized Spotify playlists. The application would offer an alternate way of discovering new music, and of creating playlists suited to any personal taste that the Spotify user might have. By first letting the user input data such as tracks, artists and/or genres they prefer and optional further parameters, the application would then be able offer to generate a playlist based on it. The result would be a highly customized, and automatically generated Spotify playlist – all done in a brief moment.
 
