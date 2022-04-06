@@ -86,6 +86,7 @@ export const TagList = styled.ul`
   justify-content: space-around;
   padding: 2rem;
   flex-wrap: wrap;
+  padding-top: 3rem;
 `;
 export const Tag = styled.li`
   color: #d8bfbf;

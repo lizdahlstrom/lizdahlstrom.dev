@@ -3,7 +3,7 @@ title: 'Personal Web Desktop'
 date: 'May 20, 2020'
 excerpt: 'An SPA that simulates a desktop that the user can open different windows and applications on.'
 image: 'pwd.png'
-tags: [ 'ReactJs', 'JavaScript', 'NextJs', 'styled-components' ]
+tags: [ 'ReactJs', 'JavaScript', 'Web Sockets' ]
 source: 'https://github.com/lizdahlstrom/lizdahlstrom.dev'
 ---
 
