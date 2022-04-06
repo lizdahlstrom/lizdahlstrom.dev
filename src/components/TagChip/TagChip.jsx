@@ -5,14 +5,16 @@ import tags from '../../constants/tags';
 
 function TagChip({ icon }) {
   const iconType = icon || 'Code';
-  const tagIcon = iconType[0] === 'd' ? DI[`Di${iconType}`] : SI[tags[iconType]];
+  let tagIcon = iconType[0] === 'd' ? DI[`Di${iconType}`] : SI[tags[iconType]];
+
+  if (!tagIcon) tagIcon = DI.DiCode;
 
   return (
     <span style={{ marginRight: '0.8em', verticalAlign: 'middle' }}>
       {tagIcon ? React.createElement(tagIcon, { style: { verticalAlign: 'sub' } }) : ''}
       {' '}
       {' '}
-      {Object.keys(tags).find((key) => key === icon)}
+      {Object.keys(tags).find((key) => key === icon) || icon}
     </span>
   );
 }
