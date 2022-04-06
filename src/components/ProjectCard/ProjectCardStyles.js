@@ -69,6 +69,7 @@ export const UtilityList = styled.ul`
   display: flex;
   justify-content: space-around;
   margin: 2.5rem 0;
+  line-height: normal;
 `;
 
 export const ExternalLinks = styled.a`

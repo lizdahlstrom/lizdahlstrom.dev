@@ -5,23 +5,33 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import Layout from '../../layout/Layout';
-import { Section, SectionText } from '../../styles/GlobalComponents';
+import { Section, SectionSubText } from '../../styles/GlobalComponents';
 /* eslint-disable react/no-danger */
 
-export default function ProjectPage({ frontmatter: { title, date, image }, content }) {
+export default function ProjectPage({
+  frontmatter: {
+    title, date, image, excerpt,
+  }, content,
+}) {
   return (
     <Layout>
       <Section>
         <Link href="/">
-          <a href="/">Go back</a>
+          Go back
         </Link>
         <div>
           <h1>{title}</h1>
           <div>{date}</div>
-          <img src={`../../../images/projects/${image}`} alt="" />
-          <SectionText>
-            <div dangerouslySetInnerHTML={{ __html: marked(content) }} />
-          </SectionText>
+          <img
+            src={`../../../images/projects/${image}`}
+            alt=""
+            style={{
+              maxWidth: '95%', maxHeight: '42vh', paddingTop: '2em', paddingBottom: '1em',
+            }}
+          />
+          <div>{excerpt}</div>
+          <br />
+          <SectionSubText dangerouslySetInnerHTML={{ __html: marked(content) }} />
         </div>
       </Section>
     </Layout>

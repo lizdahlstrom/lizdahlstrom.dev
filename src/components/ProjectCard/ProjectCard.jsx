@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DiGithubBadge } from 'react-icons/di';
+import { DiGithubBadge, DiChrome } from 'react-icons/di';
 import Link from 'next/link';
 import {
   BlogCard,
@@ -50,15 +50,23 @@ function ProjectCard({
       </div>
       <UtilityList>
         <ExternalLinks href={source}>
-          <ul style={{ listStyleType: 'none' }}>
-            <li style={{ float: 'left', marginRight: '0.3em' }}>
-              <DiGithubBadge size="2rem" />
+          <ul>
+            <li style={{ float: 'left', marginRight: '0.3em', marginLeft: '-0.3em' }}>
+              <DiGithubBadge size="2rem" style={{ display: 'block' }} />
             </li>
-            <li style={{ float: 'left' }}>Source</li>
+            <li style={{ float: 'left' }}>Code</li>
           </ul>
         </ExternalLinks>
         {visit ? (
-          <ExternalLinks href={visit}>Deployed</ExternalLinks>
+          <ExternalLinks href={visit}>
+            {' '}
+            <ul>
+              <li style={{ float: 'left', marginRight: '0.3em', marginLeft: '-0.3em' }}>
+                <DiChrome size="2rem" style={{ display: 'block' }} />
+              </li>
+              <li style={{ float: 'left' }}>Live</li>
+            </ul>
+          </ExternalLinks>
         ) : (
           ''
         )}

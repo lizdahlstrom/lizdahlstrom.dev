@@ -25,6 +25,10 @@ const GlobalStyles = createGlobalStyle`
   h1,h2,h3,h4,h5,h6,button {
     font-family: ${(props) => props.theme.fonts.title};
   }
+  h2{
+    padding-top: 0.8em;
+    padding-bottom: 0.4em;
+  }
   a {
     text-decoration: none;
   }
