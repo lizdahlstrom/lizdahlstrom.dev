@@ -59,6 +59,8 @@ export const CardInfo = styled.p`
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 1rem;
   }
+  overflow: hidden;
+  text-overflow: ellipsis;
 `;
 
 export const UtilityList = styled.ul`

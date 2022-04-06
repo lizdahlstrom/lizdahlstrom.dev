@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { DiGithubBadge } from 'react-icons/di';
+import Link from 'next/link';
 import {
   BlogCard,
   CardInfo,
@@ -21,7 +22,7 @@ const _truncate = (s, maxLength) => (s.length > maxLength
   : s);
 
 function ProjectCard({
-  title, image, excerpt, tags, visit, source,
+  title, image, excerpt, tags, visit, source, slug,
 }) {
   return (
     <BlogCard key={title}>
@@ -30,7 +31,10 @@ function ProjectCard({
         <HeaderThree title>{title}</HeaderThree>
         <Hr />
       </TitleContent>
-      <CardInfo>{_truncate(excerpt, 250)}</CardInfo>
+      <CardInfo>{_truncate(excerpt, 210)}</CardInfo>
+      <Link href={`/project/${slug}`}>
+        <a href="/">Read more</a>
+      </Link>
       <div>
         {tags
           ? (
