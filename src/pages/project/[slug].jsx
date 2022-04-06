@@ -8,7 +8,7 @@ import Layout from '../../layout/Layout';
 import { Section, SectionText } from '../../styles/GlobalComponents';
 /* eslint-disable react/no-danger */
 
-export default function ProjectPage({ frontmatter: { title, date, image }, slug, content }) {
+export default function ProjectPage({ frontmatter: { title, date, image }, content }) {
   return (
     <Layout>
       <Section>
