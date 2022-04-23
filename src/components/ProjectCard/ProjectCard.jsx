@@ -17,9 +17,17 @@ import {
 
 import TagChip from '../TagChip/TagChip';
 
-const _truncate = (s, maxLength) => (s.length > maxLength
-  ? `${s.substr(0, s.indexOf(' ', maxLength - 1))}...`
-  : s);
+const _truncate = (s, maxLength) => {
+  if (s.length <= maxLength) return s;
+
+  let str = s.substr(0, maxLength - 1);
+
+  const lastIndex = str.lastIndexOf('.');
+  // truncate where string contains a period if existant
+  if (lastIndex >= 0) str = str.substr(0, lastIndex);
+
+  return `${str}...`;
+};
 
 function ProjectCard({
   title, image, excerpt, tags, visit, source, slug,
@@ -31,10 +39,12 @@ function ProjectCard({
         <HeaderThree title="true">{title}</HeaderThree>
         <Hr />
       </TitleContent>
-      <CardInfo>{_truncate(excerpt, 210)}</CardInfo>
-      <Link href={`/project/${slug}`}>
-        <a href="/">Read more</a>
-      </Link>
+      <CardInfo>{_truncate(excerpt, 230)}</CardInfo>
+      <div>
+        <Link href={`/project/${slug}`}>
+          <a href="/">Read more</a>
+        </Link>
+      </div>
       <div>
         {tags.length > 0
           ? (
