@@ -29,7 +29,7 @@ export default function ProjectPage({
               maxWidth: '95%', maxHeight: '42vh', paddingTop: '2em', paddingBottom: '1em',
             }}
           />
-          <div>{excerpt}</div>
+          <div style={{ maxWidth: '800px' }}>{excerpt}</div>
           <br />
           <SectionSubText dangerouslySetInnerHTML={{ __html: marked(content) }} />
         </div>
