@@ -17,13 +17,14 @@ function Hero() {
           <br />
         </SectionTitle>
         <SectionText>
-          Studying computer science with a focus on web development. Based
-          in the Gothenburg area.
+          Studying computer science with a focus on web development. Based in
+          the Gothenburg area.
         </SectionText>
         <Button
           onClick={() => {
             window.location = '#about';
-          }}>
+          }}
+        >
           About me
         </Button>
       </LeftSection>

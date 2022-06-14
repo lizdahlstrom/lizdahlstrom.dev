@@ -16,6 +16,7 @@ export default class MyDocument extends Document {
         });
 
       const initialProps = await Document.getInitialProps(ctx);
+
       return {
         ...initialProps,
         styles: (
@@ -35,14 +36,22 @@ export default class MyDocument extends Document {
       <Html lang='en-GB'>
         <Head>
           <link rel='preconnect' href='https://fonts.googleapis.com' />
-          <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+
+          <link
+            rel='preconnect'
+            href='https://fonts.gstatic.com'
+            crossOrigin='true'
+          />
+
           <link
             href='https://fonts.googleapis.com/css2?family=Amatic+SC&family=Amatic+SC:wght@400;700&family=Josefin+Sans&display=swap'
             rel='stylesheet'
           />
         </Head>
+
         <body>
           <Main />
+
           <NextScript />
         </body>
       </Html>
