@@ -67,4 +67,6 @@ $RECYCLE.BIN/
 # Next build dir
 .next/
 
+out/
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,react,windows
