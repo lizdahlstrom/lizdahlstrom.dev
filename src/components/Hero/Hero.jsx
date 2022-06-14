@@ -13,17 +13,17 @@ function Hero() {
     <Section row nopadding>
       <LeftSection>
         <SectionTitle main center>
-          Hi, I&apos;m Liz Dahlström
+          Liz Dahlström
           <br />
         </SectionTitle>
         <SectionText>
-          I&apos;m a Computer Science student focused on web development based in Gothenburg.
+          Studying computer science with a focus on web development. Based
+          in the Gothenburg area.
         </SectionText>
         <Button
           onClick={() => {
             window.location = '#about';
-          }}
-        >
+          }}>
           About me
         </Button>
       </LeftSection>
