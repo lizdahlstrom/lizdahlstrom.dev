@@ -1,8 +1,8 @@
 export default {
   // Temp fonts
   fonts: {
-    title: 'Ubuntu Mono, Space Grotesk, sans-serif',
-    main: 'Space Grotesk, sans-serif',
+    title: 'Amatic SC, Ubuntu Mono, Space Grotesk, sans-serif',
+    main: 'Josefin Sans, Space Grotesk, sans-serif',
   },
   // Colors for layout
   colors: {
